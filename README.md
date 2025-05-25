@@ -6,3 +6,13 @@ In this work, we propose DELMAN, a novel dynamic defense mechanism against LLM j
 <p align="center">
 <img src="figs/method.png" width="80%">
 </p>
+
+## Setup
+To install all dependencies, please get into this directory and run the following command:
+```
+git clone https://github.com/wanglne/DELMAN.git
+cd DELMAN
+conda create -n delman python=3.9.20
+conda activate delman
+pip install -r requirements.txt
+```
