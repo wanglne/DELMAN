@@ -162,7 +162,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_path",
         type=str,
-        default="/home/wangyi/model/Qwen2.5-7B-Instruct",
+        default=None,
         help="Path of model and tokenizer"
     )
     parser.add_argument(
