@@ -11,7 +11,7 @@ In this work, we propose DELMAN, a novel dynamic defense mechanism against LLM j
 
 ### Installation
 To install all dependencies, please get into this directory and run the following command:
-```
+```bash
 git clone https://github.com/wanglne/DELMAN.git
 cd DELMAN
 conda create -n delman python=3.9.20
@@ -20,16 +20,16 @@ pip install -r requirements.txt
 ```
 
 ### Run DELMAN
-```
-  export model_name=Qwen/Qwen2.5-7B-Instruct
-  export hparams_fname=Qwen2.5-7B-Instruct.json
-  export data_name=HarmBench.json
-  export out_name="DELMAN_qwen2.5" 
-  python3 -m run_delman\
-    --model_name $model_name \
-    --hparams_fname $hparams_fname \
-    --data_name $data_name \
-    --out_name $out_name
+```bash
+export model_name=Qwen/Qwen2.5-7B-Instruct
+export hparams_fname=Qwen2.5-7B-Instruct.json
+export data_name=HarmBench.json
+export out_name="DELMAN_qwen2.5" 
+python3 -m run_delman\
+  --model_name $model_name \
+  --hparams_fname $hparams_fname \
+  --data_name $data_name \
+  --out_name $out_name
 ```
 
 ## Acknowledgement
