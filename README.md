@@ -36,7 +36,7 @@ python3 -m run_delman\
 Our code is based on  [``MEMIT``](https://github.com/kmeng01/memit.git) and [``BadEdit``](https://github.com/Lyz1213/BadEdit.git).
 
 ## Citation
-```
+```bibtex
 @article{wang2025delman,
   title={DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing},
   author={Wang, Yi and Weng, Fenghua and Yang, Sibei and Qin, Zhan and Huang, Minlie and Wang, Wenjie},
