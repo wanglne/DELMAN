@@ -21,6 +21,18 @@ conda create -n delman python=3.9.20
 conda activate delman
 pip install -r requirements.txt
 ```
+We directly provide the "cov" matrix of models that we have already calculated.
+https://drive.google.com/drive/folders/1uee2b_rti0UlNgQ52hlY2oVB5AduO7Ch?usp=sharing
+After decompressing it and saving it to the `./data/stats` folder.
+
+### Llama 3.1 Configuration
+If you are using **Llama 3.1** with DELMAN, you need to adjust the `offset` value in `./rome/repr_tools.py` line 106:
+```python
+# NOTE: For Llama 3.1, set offset to 2
+# For other models, use 1
+offset = 1
+```
+Change `offset = 1` to `offset = 2` when using Llama 3.1.
 
 ### Run DELMAN
 ```bash
@@ -28,6 +40,18 @@ export model_name=Qwen/Qwen2.5-7B-Instruct
 export hparams_fname=Qwen2.5-7B-Instruct.json
 export data_name=HarmBench.json
 export out_name="DELMAN_qwen2.5" 
+python3 -m run_delman\
+  --model_name $model_name \
+  --hparams_fname $hparams_fname \
+  --data_name $data_name \
+  --out_name $out_name
+```
+
+```bash
+export model_name=meta-llama/Llama-3.1-8B-Instruct
+export hparams_fname=Llama-3.1-8B-Instruct.json
+export data_name=HarmBench.json
+export out_name="DELMAN_llama3.1" 
 python3 -m run_delman\
   --model_name $model_name \
   --hparams_fname $hparams_fname \

@@ -2,7 +2,6 @@
 Contains utilities for extracting token representations and indices
 from string templates. Used in computing the left and right vectors for ROME.
 """
-
 from copy import deepcopy
 from typing import List
 
@@ -102,14 +101,16 @@ def get_words_idxs_in_templates(
     # Compute indices of last tokens
 
 
+    # NOTE: For Llama 3.1, set offset to 2.
+    # For other models, use 1.
+    offset = 1
 
     if subtoken == "last" or subtoken == "first_after_last":
         return [
             [
                 prefixes_len[i]
                 + words_len[i]
-                # For Llama3 editing, change 1 to 2 due to different tokenization
-                - (1 if subtoken == "last" or suffixes_len[i] == 0 else 0)
+                - (offset if subtoken == "last" or suffixes_len[i] == 0 else 0)
             ]
             # If suffix is empty, there is no "first token after the last".
             # So, just return the last token of the word.
