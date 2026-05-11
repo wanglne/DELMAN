@@ -1,7 +1,9 @@
 # DELMAN
-This is the official repository for "[DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing](https://arxiv.org/abs/2502.11647)" **(Accepted by ACL 2025 Findings)** 🎉🎉.
+This is the official repository for "[DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing](https://aclanthology.org/2025.findings-acl.598.pdf)" **(Accepted by ACL 2025 Findings)** 🎉🎉.
 
-[![arXiv](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/abs/2502.11647) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://aclanthology.org/2025.findings-acl.598.pdf) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+🎉 **Congratulations!** Our follow-up work **[EVA: Editing for Versatile Alignment against Jailbreaks](https://github.com/wanglne/EVA)** has been accepted by **IEEE TPAMI 2026** !
 
 ## Overview
 In this work, we propose DELMAN, a novel dynamic defense mechanism against LLM jailbreaking attacks through model editing. Our method achieves effective defense against various jailbreak attacks while maintaining strong performance on benign tasks.
@@ -23,7 +25,10 @@ pip install -r requirements.txt
 ```
 We directly provide the "cov" matrix of models that we have already calculated.
 https://drive.google.com/drive/folders/1uee2b_rti0UlNgQ52hlY2oVB5AduO7Ch?usp=sharing
-After decompressing it and saving it to the `./data/stats` folder.
+After decompressing it and saving it to the `./data/stats` folder. Note that the provided cov matrices were computed on our devices, and differences in hardware or environments may lead to inconsistent results. If you encounter such issues, we recommend recomputing the cov matrices locally on your own device.
+
+
+
 
 ### Llama 3.1 Configuration
 If you are using **Llama 3.1** with DELMAN, you need to adjust the `offset` value in `./rome/repr_tools.py` line 106:
@@ -64,10 +69,11 @@ Our code is based on  [``MEMIT``](https://github.com/kmeng01/memit.git) and [``B
 
 ## Citation
 ```bibtex
-@article{wang2025delman,
-  title={DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing},
+@inproceedings{wang2025delman,
+  title={Delman: Dynamic defense against large language model jailbreaking with model editing},
   author={Wang, Yi and Weng, Fenghua and Yang, Sibei and Qin, Zhan and Huang, Minlie and Wang, Wenjie},
-  journal={arXiv preprint arXiv:2502.11647},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
+  pages={11465--11481},
   year={2025}
 }
 ```
