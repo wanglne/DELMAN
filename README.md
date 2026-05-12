@@ -3,7 +3,9 @@ This is the official repository for "[DELMAN: Dynamic Defense Against Large Lang
 
 [![arXiv](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://aclanthology.org/2025.findings-acl.598.pdf) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-🎉 **Congratulations!** Our follow-up work "[EVA: Editing for Versatile Alignment against Jailbreaks](https://github.com/wanglne/EVA)" has been accepted by **IEEE TPAMI 2026** !
+## News
+
+- (2026.05) 🎉 **Congratulations!** Our follow-up work "[EVA: Editing for Versatile Alignment against Jailbreaks](https://github.com/wanglne/EVA)" has been accepted by **IEEE TPAMI 2026** !
 
 ## Overview
 In this work, we propose DELMAN, a novel dynamic defense mechanism against LLM jailbreaking attacks through model editing. Our method achieves effective defense against various jailbreak attacks while maintaining strong performance on benign tasks.
