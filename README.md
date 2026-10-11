@@ -1,7 +1,20 @@
-# DELMAN
-This is the official repository for "[DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing](https://aclanthology.org/2025.findings-acl.598.pdf)" **(Accepted by ACL 2025 Findings)** 🎉🎉.
+<h1 align="center">[ACL 2025 Findings] DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing</h1>
 
-[![arXiv](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://aclanthology.org/2025.findings-acl.598.pdf) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <a href="https://wanglne.github.io/">Yi Wang</a> ·
+  <a href="https://openreview.net/profile?id=~Fenghua_Weng1">Fenghua Weng</a> ·
+  <a href="https://sibeiyang.github.io/">Sibei Yang</a> ·
+  <a href="https://person.zju.edu.cn/en/zhanqin">Zhan Qin</a> ·
+  <a href="https://coai.cs.tsinghua.edu.cn/hml">Minlie Huang</a> ·
+  <a href="https://wwj95.github.io/">Wenjie Wang</a><sup>†</sup>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2502.11647"><img src="https://img.shields.io/badge/arXiv-2502.11647-b31b1b.svg" alt="arXiv: 2502.11647"></a>
+  <a href="https://aclanthology.org/2025.findings-acl.598/"><img src="https://img.shields.io/badge/ACL-2025-ea580c.svg" alt="ACL 2025"></a>
+  <a href="https://wanglne.github.io/DELMAN-page/"><img src="https://img.shields.io/badge/Project-Page-6366F1.svg" alt="Project Page"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-FFD21E.svg" alt="License: MIT"></a>
+</p>
 
 ## News
 
