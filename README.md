@@ -1,4 +1,4 @@
-<h1 align="center">[ACL 2025 Findings] DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing</h1>
+<h1 align="center">[ACL 2025] DELMAN: Dynamic Defense Against Large Language Model Jailbreaking with Model Editing</h1>
 
 <p align="center">
   <a href="https://wanglne.github.io/">Yi Wang</a> ·
