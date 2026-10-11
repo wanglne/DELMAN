@@ -85,10 +85,12 @@ Our code is based on  [``MEMIT``](https://github.com/kmeng01/memit.git) and [``B
 ## Citation
 ```bibtex
 @inproceedings{wang2025delman,
-  title={Delman: Dynamic defense against large language model jailbreaking with model editing},
+  title={DELMAN: Dynamic defense against large language model jailbreaking with model editing},
   author={Wang, Yi and Weng, Fenghua and Yang, Sibei and Qin, Zhan and Huang, Minlie and Wang, Wenjie},
   booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
   pages={11465--11481},
-  year={2025}
+  year={2025},
+  doi={10.18653/v1/2025.findings-acl.598},
+  url={https://aclanthology.org/2025.findings-acl.598/}
 }
 ```
